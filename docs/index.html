@@ -49,12 +49,24 @@
         }
          .title{
          margin-bottom: 20px;
-         font-size: 25px;
-         font-family: 'Times New Roman', Times, serif;
+         font-size: 50px;
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
          text-align:center;
          color:rgba(98, 100, 100, 0.562);
- 
+         animation: 3s linear 1s infinite alternate slidein;
+         
          }
+         
+         @-webkit-keyframes glow {
+           from {
+             text-shadow: 0 0 10px #fff, 0 0 20px #3f3f3e, 0 0 30px #2c2c2c, 0 0 40px #3f3f3e, 0 0 50px #3f3f3e, 0 0 60px #3f3f3e, 0 0 70px #3f3f3e;
+           }
+           
+           to {
+             text-shadow: 0 0 20px #fff, 0 0 30px #3f3f3e, 0 0 40px #3f3f3e, 0 0 50px #3f3f3e, 0 0 60px #3f3f3e, 0 0 70px #3f3f3e, 0 0 80px #3f3f3e;
+           }
+         }
+ 
   
          input[type="button"]
          {
@@ -162,6 +174,31 @@
        
        
        </pre>
+       <style>
+         body {
+           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         }
+         
+         .glow {
+           font-size: 50px;
+           color: rgba(75, 151, 192, 0.741);
+           text-align: center;
+           animation: glow 1s ease-in-out infinite alternate;
+         }
+         
+         @-webkit-keyframes glow {
+           from {
+             text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e9d45e, 0 0 40px #e9d45e, 0 0 50px #e9d45e, 0 0 60px #e9d45e, 0 0 70px #e9d45e;
+           }
+           
+           to {
+             text-shadow: 0 0 20px #fff, 0 0 30px #e9d45e, 0 0 40px #e9d45e, 0 0 50px #e9d45e, 0 0 60px #e9d45e, 0 0 70px #e9d45e, 0 0 80px #e9d45e;
+           }
+         }
+         </style>
+         
+         <h1 class="glow">Weather</h1>
+
        <a class="weatherwidget-io" href="https://forecast7.com/en/40d34n76d41/lebanon/?unit=us" data-label_1="LEBANON, PA" data-label_2="WEATHER" data-font="Times New Roman" data-icons="Climacons Animated" >LEBANON, PA WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
@@ -169,4 +206,4 @@
        
        <p style="font-family: Garamond, serif;text-align: center;font: size 10px;color:rgb(107, 104, 99);">Hosted On <a href="https://github.com/">GitHub</a></p>
               </body>
-</html>   
+</html>  
