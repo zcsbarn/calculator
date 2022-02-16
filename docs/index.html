@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en">
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +15,7 @@
       }
       </style> 
 
-      <script id="weatherwidget-io-js" src="index_files/widget.js"></script><script>
+      <script>
          //function that display value
          function dis(val)
          {
@@ -111,54 +111,53 @@
    </head>
    <!-- create table -->
    <body>
-    <div class="title">My Own Calculator</div><table class="center">
-      
-      </table><table class="center">
-            <tbody><tr>
-            <td colspan="4"><input type="text" id="result"></td>
+    <table class="center">
+      <div class = title >My Own Calculator</div>
+      <table class="center">
+            <tr>
+            <td colspan="4"><input type="text" id="result"/></td>
             </tr>
             <tr>
                 <!-- clr() function will call clr to clear all value -->
-                <td colspan="4"><button type="clear" onclick="clr()">Clear It!</button></td>
+                <td colspan="4"><button type="clear"onclick="clr()">Clear It!</button></td>
             </tr>
          <tr>
             <!-- create button and assign value to each button -->
             <!-- dis("1") will call function dis to display value -->
-            <td><input type="button" value="1" onclick="dis('1')"> </td>
-            <td><input type="button" value="2" onclick="dis('2')"> </td>
-            <td><input type="button" value="3" onclick="dis('3')"> </td>
-            <td><input type="button" value="÷" onclick="dis('/')"> </td>
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="÷" onclick="dis('/')"/> </td>
             
          </tr>
          <tr>
-            <td><input type="button" value="4" onclick="dis('4')"> </td>
-            <td><input type="button" value="5" onclick="dis('5')"> </td>
-            <td><input type="button" value="6" onclick="dis('6')"> </td>
-            <td><input type="button" value="-" onclick="dis('-')"> </td>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
          </tr>
          <tr>
-            <td><input type="button" value="7" onclick="dis('7')"> </td>
-            <td><input type="button" value="8" onclick="dis('8')"> </td>
-            <td><input type="button" value="9" onclick="dis('9')"> </td>
-            <td><input type="button" value="+" onclick="dis('+')"> </td>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
          </tr>
          <tr>
-            <td><input type="button" value="." onclick="dis('.')"> </td>
-            <td><input type="button" value="0" onclick="dis('0')"> </td>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
             <!-- solve function call function solve to evaluate value -->
-            <td><input type="button" value="=" onclick="solve()"> </td>
-            <td><input type="button" value="x" onclick="dis('*')"> </td>
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="x" onclick="dis('*')"/> </td>
          </tr>
-      </tbody></table>
+      </table>
       <p style="font-family: Garamond, serif;text-align: center;font: size 15px;color:rgb(107, 104, 99);">Created solely for the enjoyment of acomplishing!<br>
       Not that there's a shortage of calculators out there!😁<br>
       Copywright 2021<br>-Shannon Zimmerman-</p>
-       <a class="weatherwidget-io" href="https://forecast7.com/en/40d34n76d41/lebanon/?unit=us" data-label_1="LEBANON, PA" data-label_2="WEATHER" data-font="Times New Roman" data-icons="Climacons Animated" style="display: block; position: relative; height: 100px; padding: 0px; overflow: hidden; text-align: left; text-indent: -299rem;">LEBANON, PA WEATHER<iframe id="weatherwidget-io-0" class="weatherwidget-io-frame" title="Weather Widget" scrolling="no" src="index_files/a.htm" style="display: block; position: absolute; top: 0px; height: 100px;" width="100%" frameborder="0"></iframe></a>
+       <a class="weatherwidget-io" href="https://forecast7.com/en/40d34n76d41/lebanon/?unit=us" data-label_1="LEBANON, PA" data-label_2="WEATHER" data-font="Times New Roman" data-icons="Climacons Animated" >LEBANON, PA WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
        <p style="font-family: Garamond, serif;text-align: center;font: size 10px;color:rgb(107, 104, 99);">Previous version can be found <a href="https://zcsbarn.github.io/heritagedesigns/old+calc+vers.html">here.</a></p>
        <p style="font-family: Garamond, serif;text-align: center;font: size 10px;color:rgb(107, 104, 99);">Hosted On <a href="https://github.com/">GitHub</a></p>
-              
-   
-</body></html>
+              </body>
+</html>   
